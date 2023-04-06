@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      var b = document.URL.includes(
+        "name=manish+srivastav&email=manishsrivastav%40bbdu.ac.in&checkbox=on&password=12&password=&date=&datetime-local=&time=&month=&number=&week=&hidden=&range=130"
+      );
+      var a = document.URL.includes(
+        "name=&email=&checkbox=on&password=&password=&date=&datetime-local=&time=&month=&number=&week=&hidden=&range=0"
+      );
+      if (a) {
+        alert("Something went wrong");
+        // window.location.href = "http://127.0.0.1:5500/tutorial/form.html";
+      } else if (b) {
+        alert("Registration successful");
+        window.location.href = "form.html";
+      }
+    </script>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>HTML 5</legend>
+        name:<input
+          type="text"
+          name="name"
+          value="manish srivastav"
+          maxlength="20"
+        />
+        <br />
+        <br />
+        Color:<input type="color" value="#ff0000" />
+        <br />
+        <br />
+        Email: <input type="email" name="email" required="" />
+        <br />
+        <br />
+        Hobbies <input type="checkbox" name="checkbox" checked />Dancing
+        <input type="checkbox" name="checkbox" />Singing
+        <br />
+        <br />
+        password: <input type="password" name="password" id="" required="" />
+        <br />
+        <br />
+        Number:<input type="password" name="password" id="" />
+        <br />
+        <br />
+        Date:<input type="date" name="date" />
+        <br />
+        <br />
+        Date Time: <input type="datetime-local" name="datetime-local" id="" />
+        <br />
+        <br />
+        Time: <input type="time" name="time" />
+        <br />
+        <br />
+        Month: <input type="month" name="month" />
+        <br />
+        <br />
+        Age: <input type="number" name="number" min="1" max="25" />
+        <br />
+        <br />
+        Week: <input type="week" name="week" />
+        <br />
+        <br />
+        secret: <input type="hidden" name="hidden" />
+        <br />
+        <br />
+        Range: <input type="Range" name="range" min="0" max="200" value="130" />
+        <br />
+        <br />
+        <input type="submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML 5</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>HTML 5</legend>
+        color:
+        <input type="color" name="color" />
+        <br />
+        <br />
+        Email:
+        <input type="email" name="email" id="" />
+        <br />
+        <br />
+        password:
+        <input type="password" name="password" id="" />
+        <br />
+        <br />
+        Number
+        <input type="Number" name="age" id="" />
+        <br />
+        <br />
+        Date
+        <input type="Date" name="Date" id="" />
+        <br />
+        <br />
+        Date Time:
+        <input type="datetime-local" name="" id="" />
+        <br />
+        <br />
+        Time:
+        <input type="time" name="" id="" />
+        <br />
+        <br />
+        Month:
+        <input type="month" name="" id="" />
+        <br />
+        <br />
+        Week:
+        <input type="week" name="" id="" />
+        <br />
+        <br />
+        Range:
+        <input type="range" name="" id="" />
+        <br />
+        <br />
+        Secret
+        <input type="hidden" name="Secret" id="" />
+        <br />
+        <br />
+        <input type="Submit" name="Submit" id="" />
+      </fieldset>
+    </form>
+  </body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Enquiry</legend>
+        Name:<input type="text" name="name" value="Testing" />
+        <br />
+        <br />
+        Address:<textarea name="address"></textarea>
+        <br />
+        <br />
+        Gender:
+        <input type="radio" value="m" name="gender" />Male
+        <input type="radio" value="f" name="gender" />female
+        <input type="radio" value="o" name="gender" />other
+        <br />
+        <br />
+        Country:
+        <select>
+          <option value="">Please select a country</option>
+          <optgroup label="ASIA">
+            <option value="india">india</option>
+            <option value="srilanka">Srilanka</option>
+          </optgroup>
+          <option>Australia</option>
+          <option>nueseeland</option>
+        </select>
+        <br />
+        <br />
+        Hobbies:
+        <input type="checkbox" name="" id="Hobbies[]" />Dancing
+        <input type="checkbox" name="" id="Singing[]" />Singing
+        <input type="checkbox" name="" id="Painting[]" />painting
+        <br />
+        <br />
+        Image:
+        <input type="file" name="image" id="" />
+        <br />
+        <br />
+        <input type="submit" value="send" />
+        <input type="submit" value="reset" />
+      </fieldset>
+    </form>
+  </body>
+</html> -->

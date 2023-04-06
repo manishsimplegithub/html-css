@@ -1,0 +1,58 @@
+*{
+    font-size: large;
+    color: rgb(236, 157, 157);
+    /* background-color: #141515; */
+}
+body{
+     background-color: #141515;
+    background-image: url("img_tree.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-top: 200px;
+}
+.div1{
+    margin-top: 12%;
+    height: 80%;
+    width: 25%;
+}
+
+#uname{
+    color: #abfe85;
+    background: black;
+    margin-top: 50px;
+    margin-left: 5px ;
+}
+#email{
+    color: #ecfe85 ;
+    background: black;
+    margin-top: 20px;
+    margin-left: 29px ;
+}
+#apisign{
+        color: #141515;
+        background-color: aliceblue;
+        width: 60%;
+        border-radius: 20px;
+        margin-top: 20px;
+        margin-left: 30px;
+}
+#apisign:hover{
+    background-color: #f98eff;
+}
+::placeholder{
+    color: #ff8ec8;
+}
+.login{
+    font-weight: bold;
+    color: #023e04;
+    background-color: rgb(138, 193, 184);
+    width: 80%;
+    border-radius: 20px;
+    margin-top: 20px;
+    /* margin-left: 30px; */
+}
+.login:hover{
+    background-color: #70789f;
+    color: #ecfe85;
+}
+
